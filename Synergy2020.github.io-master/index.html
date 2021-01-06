@@ -27,9 +27,12 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/synergy.jpeg">
+
+
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html"><span><img src="img/FooterLogo.png" alt="" > </span></a>
@@ -102,7 +105,93 @@
                         height: 30px;
                     }
                 }
+                  .affix {
+                   top: 0;
+                   width: 100%;
+                   z-index: 9999 !important;
+                    }
+
+                 .affix + .container-fluid {
+                  padding-top: 70px;
+                   }
+                :root{
+                	--marquee-width:100vw;
+                	--marquee-height:20vh;
+                	--marquee-elements:5;
+                	--marquee-elements-displayed:5;
+                	--marquee-element-width:calc(var(--marquee-width)/var(--marquee-elements-displayed));
+                	--marquee-elementheight:;
+                	--marquee-animation-duration:calc(var(--marquee-elements)*2s);
+                }
+                .marquee{
+    		width:var(--marquee-width);
+    		height: var(--marquee-height)
+    		background-color:white;
+    		color: tomato;
+    		padding-top: 50px;
+    		overflow: hidden;
+    		position: fixed;
+    		position: relative;
+    	     }
+    	     .marquee:before ,.marquee:after {
+    	     	position:absolute;
+    	     	top:0;
+    	     	width:10rem;
+    	     	height: 100%;
+    	     	content:"";
+    	     	z-index: 1;
+    	     }
+    	     .marquee:before{
+    	     	left:0;
+    	     	background: linear-gradient(to right,#111 0%,transparent 100%);
+
+    	     }
+    	     .marquee:after{
+    	     	right:0;
+    	     	background: linear-gradient(to left,#111 0%,transparent 100%);
+    	     }
+    	     .marquee-content{
+    	     	list-style: none;
+    	     	height:100%;
+    	     	display: flex;
+    	     	animation: scrolling var(--marquee-animation-duration) linear infinite;
+
+    	     }
+    	     @keyframes scrolling{
+    	     	0% {transform: translateX(0);}
+    	     	100%{transform: translateX(calc(-1*var(--marquee-element-width)*var(--marquee-elements)));}
+
+    	     }
+    	     .marquee-content:hover{
+    	     	animation-play-state: paused;
+    	     }
+    	     .marquee-content li{
+    	     	display: flex;
+    	     	justify-content: center;
+    	     	align-items: center;
+    	     	width:var(--marquee-element-width);
+    	     	flex-shrink: 0;
+    	     	font-size: calc(var(--marquee-height)*2/3);
+    	     	white-space: nowrap;
+
+    	     }
+    	     .marquee-content li img {
+                width: 50%;
+                height:100px;
+                /* height: 100%; */
+                padding-top: 40px;
+             }
+    	     @media (max-width: 600px) {
+             html { font-size: 12px; }
+            :root {
+            --marquee-width: 100vw;
+            --marquee-height: 16vh;
+            --marquee-elements-displayed: 3;
+             }
+          .marquee:before, .marquee:after { width: 5rem; }
+            }
             </style>
+           
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
@@ -131,6 +220,26 @@
             </div>
         </div>
     </nav>
+     
+     	<div class="marquee" >
+    	<ul class="marquee-content">
+    		<li><img src="img/Sponsors/1.jpg"></li>
+    		<li><img src="img/Sponsors/2.jpg"></li>
+    		<li><img src="img/Sponsors/3.jpg"></li>
+    		<li><img src="img/Sponsors/4.jpg"></li>
+    		<li><img src="img/Sponsors/5.jpg"></li>
+    		<li><img src="img/Sponsors/1.jpg"></li>
+    		<li><img src="img/Sponsors/2.jpg"></li>
+    		<li><img src="img/Sponsors/3.jpg"></li>
+    		<li><img src="img/Sponsors/4.jpg"></li>
+    		<li><img src="img/Sponsors/5.jpg"></li>
+    		
+
+    	</ul>
+    </div>
+</div>
+
+
     <!-- END nav -->
     <!-- Sponsors stylesheet -->
     <style>
@@ -359,8 +468,28 @@
             font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         }
     </style>
+
+     <!-- <div class="marquee" data-spy="affix" data-offset-top="197">
+    	<ul class="marquee-content">
+    		<li><img src="img/Sponsors/1.jpg"></li>
+    		<li><img src="img/Sponsors/2.jpg"></li>
+    		<li><img src="img/Sponsors/3.jpg"></li>
+    		<li><img src="img/Sponsors/4.jpg"></li>
+    		<li><img src="img/Sponsors/5.jpg"></li>
+    		<li><img src="img/Sponsors/1.jpg"></li>
+    		<li><img src="img/Sponsors/2.jpg"></li>
+    		<li><img src="img/Sponsors/3.jpg"></li>
+    		<li><img src="img/Sponsors/4.jpg"></li>
+    		<li><img src="img/Sponsors/5.jpg"></li>
+    		
+
+    	</ul>
+    </div> -->
+
+          
+
     <div class="hero-wrap js-fullheight" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbDHaG9oJLCHUDx9DBPuN31CatcImEram86xpT_MaXr_Wfl17p');" data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
+    	 <div class="overlay"></div>
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center " data-scrollax-parent="true">
                 <div class="col-md-12 ftco-animate mt-5 text-center" data-scrollax=" properties: { translateY: '70%' }">
@@ -374,10 +503,78 @@
                             <span>Watch IGNITE 2020</span>
                         </p>
                     </div> -->
+
                 </div>
             </div>
         </div>
     </div>
+<!--      <style style="text/css">
+        .marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: #333;
+            border: 1px solid #4a4a4a;
+        }
+        
+        .marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite;
+        }
+        
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+        
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+        
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+
+    <div class="marquee">
+        <p> 
+        	<img src="img/Sponsors/1.jpg">
+        	<img src="img/Sponsors/3.jpg">
+        	<img src="img/Sponsors/2.jpg">
+        	<img src="img/Sponsors/4.jpg">
+        	<img src="img/Sponsors/5.jpg">
+
+        </p>
+    </div> -->
     <style>
         .game-schedule-d .sport-team-sp-d img {
             width: 100px;
@@ -840,7 +1037,7 @@
                         <h2 class="ftco-heading-2">Synergy</h2>
                         <p class="text">The Sports Society of Indira Gandhi Delhi Technical University For Women</p>
                         <ul class="list-unstyled">
-                            <li><a href="mailto: synergy.igdtuw@gmail.com"><span class="icon icon-envelope">&nbsp synergy.igdtuw@gmail.com</span></a></li>
+                            <li><a href="mailto: synergy@igdtuw.ac.in"><span class="icon icon-envelope">&nbsp synergy@igdtuw.ac.in</span></a></li>
                         </ul>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
                             <li class="ftco-animate"><a href="https://www.linkedin.com/company/synergy-sports-society-of-igdtuw/"><span class="icon-linkedin"></span></a></li>
@@ -878,7 +1075,9 @@
             </div>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>Copyright &copy;
+                    <p>
+                        Developed by <a href="https://www.linkedin.com/in/tanya-garg-b51221145/" target="_blank">Tanya Garg (MCA, IGDTUW)</a> Web-D Core of Synergy
+                        <br> Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
                         </script> All rights reserved.</p>
