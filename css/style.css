@@ -8004,7 +8004,9 @@ h1, h2, h3, h4, h5,
   font-weight: 400; }
 
 .container {
-  max-width: 1200px; }
+  /* max-width: 1200px;  */
+  max-width: 100%;
+}
 
 .ftco-navbar-light {
   background: transparent !important;
@@ -8023,7 +8025,7 @@ h1, h2, h3, h4, h5,
       padding-bottom: 0;
       padding-left: 0; } }
   .ftco-navbar-light .container {
-    width: 1170px;
+    /* width: 1170px; */
     margin: 0 auto;
     padding: 0; }
     @media (max-width: 1199.98px) {
