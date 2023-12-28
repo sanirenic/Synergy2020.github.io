@@ -33,21 +33,22 @@
 
 <body>
 
-<!-- Header Start -->
+    <!-- Header Start -->
     <!-- Nav Start -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><span><img src="img/FooterLogo.png" alt="" > </span></a>
+            <a class="navbar-brand" href="index.html"><span><img src="img/FooterLogo.png" alt=""> </span></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
             <style>
                 .navbar-brand img {
                     width: 80px;
                     height: 40px;
                 }
-                
+
                 .dropdown {
                     position: absolute;
                     display: none;
@@ -57,18 +58,18 @@
                     padding: 10px;
                     background-color: black;
                 }
-                
+
                 .dropdown li {
                     display: block;
                     margin: auto;
                     padding: 5px 10px;
                 }
-                
+
                 .dropdown li a {
                     text-align: center;
                     color: white;
                 }
-                
+
                 .dropdown::after {
                     content: "";
                     position: absolute;
@@ -79,11 +80,11 @@
                     border-style: solid;
                     border-color: transparent transparent black transparent;
                 }
-                
+
                 .dropdownMymenu:hover .dropdown {
                     display: block;
                 }
-                
+
                 @media only screen and (max-width: 992px) {
                     .dropdown {
                         display: block;
@@ -92,24 +93,27 @@
                         padding: 0px;
                         margin: 0px;
                     }
+
                     .dropdown li {
                         padding: 5px;
                     }
+
                     .dropdown li a {
                         text-align: center;
                         color: black;
                     }
+
                     .navbar-brand {
                         padding: 0px 5px;
                     }
+
                     .navbar-brand img {
                         width: 60px;
                         height: 30px;
                     }
                 }
-                  
             </style>
-           
+
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -135,7 +139,8 @@
                     </li>
                     <!-- <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li> -->
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li class="nav-item" style="float: right;cursor:pointer" onclick="openNav()"><a class="nav-link">Sponsors</a></li>
+                    <li class="nav-item" style="float: right;cursor:pointer" onclick="openNav()"><a
+                            class="nav-link">Sponsors</a></li>
 
 
                 </ul>
@@ -155,7 +160,7 @@
             animation: text 3s 1;
             color: white;
         }
-        
+
         .Sponsorstext {
             font-size: 15px;
             text-align: center;
@@ -165,7 +170,7 @@
             color: white;
             padding-top: 10%;
         }
-        
+
         .flip-box {
             background-color: transparent;
             width: 250px;
@@ -173,8 +178,9 @@
             perspective: 1000px;
             /* Remove this if you don't want the 3D effect */
         }
+
         /* This container is needed to position the front and back side */
-        
+
         .flip-box-inner {
             position: relative;
             width: 100%;
@@ -183,8 +189,9 @@
             transition: transform 0.8s;
             transform-style: preserve-3d;
         }
+
         /* Position the front and back side */
-        
+
         .flip-box-front,
         .flip-box-back {
             position: absolute;
@@ -194,31 +201,35 @@
             /* Safari */
             backface-visibility: hidden;
         }
+
         /* Style the front side */
-        
+
         .flip-box-front {
             background-color: black;
             color: black;
         }
-        
+
         .flip-box-front img {
             border-radius: 10px;
             margin: auto;
             padding-top: 15px;
             padding-bottom: 10px;
         }
+
         /* Do an horizontal flip when you move the mouse over the flip box container */
-        
+
         .flip-box:hover .flip-box-inner {
             transform: rotateX(180deg);
         }
+
         /* Style the back side */
-        
+
         .flip-box-back {
             background-color: orange;
             color: white;
             transform: rotateX(180deg);
         }
+
         /* .heading {
             font-size: 30px;
             text-align: center;
@@ -247,7 +258,7 @@
             animation: glow 1s ease-in-out infinite alternate;
             background: orange;
         } */
-        
+
         .sidenav {
             height: 100vh;
             overflow-y: auto;
@@ -261,7 +272,7 @@
             transition: 0.5s;
             padding-top: 60px;
         }
-        
+
         .sidenav a {
             padding: 8px 8px 8px 32px;
             text-decoration: none;
@@ -270,11 +281,11 @@
             display: block;
             transition: 0.3s;
         }
-        
+
         .sidenav a:hover {
             color: #f1f1f1;
         }
-        
+
         .sidenav .closebtn {
             position: absolute;
             top: 0;
@@ -283,11 +294,12 @@
             font-size: 36px;
             margin-left: 50px;
         }
-        
+
         @media screen and (max-height: 450px) {
             .sidenav {
                 padding-top: 15px;
             }
+
             .sidenav a {
                 font-size: 18px;
             }
@@ -471,47 +483,50 @@
         }
     </script>
     <!--End Sponsors code -->
-<!-- Header End -->
+    <!-- Header End -->
 
 
-<!-- Main Content start -->
+    <!-- Main Content start -->
 
-<style>
-    .marqueeBox{
-        position:absolute;
-        top:17%;
-       
-    }
-    .marqueeUl{
-        display: inline;
-        list-style: none;
+    <style>
+        .marqueeBox {
+            position: absolute;
+            top: 17%;
 
-    }
-    .marqueeUl li{
-        cursor: pointer;
-        display: inline;
-        padding: 5px 10px;
-    }
-</style>
+        }
+
+        .marqueeUl {
+            display: inline;
+            list-style: none;
+
+        }
+
+        .marqueeUl li {
+            cursor: pointer;
+            display: inline;
+            padding: 5px 10px;
+        }
+    </style>
 
 
     <style>
         .homeHeading {
             font-size: 4.5rem;
-            font-weight:bold;
+            font-weight: bold;
             font-family: "Work Sans";
         }
-        .overlayDiv{
+
+        .overlayDiv {
             /* opacity: .9; */
-            background-color:#1a020250;
+            background-color: #1a020250;
             width: 100%;
             height: 100%;
         }
-    </style>       
-    
-    	 
-        
-        
+    </style>
+
+
+
+
     </div>
 
     <style>
@@ -523,9 +538,9 @@
     <br>
     <br>
     <section class="ftco-section ftco-game-schedule bg-light">
-                <div class="col-md-12 heading-section ftco-animate mb-4 mt-4 text-center">
-                    <h2 style="background-color: rgb(247, 211, 9);">Tug O War-2023</h2>
-                </div>
+        <div class="col-md-12 heading-section ftco-animate mb-4 mt-4 text-center">
+            <h2 style="background-color: rgb(247, 211, 9);">Tug O War-2023</h2>
+        </div>
 
     </section>
 
@@ -534,19 +549,22 @@
         <div class="container">
             <div class="row d-flex">
                 <div class="col-md-6 d-flex">
-                    <div class="img d-flex align-self-stretch mb-4 mt-4" style="background-image:url(img/Tug-o-war.jpg);">
+                    <div class="img d-flex align-self-stretch mb-4 mt-4"
+                        style="background-image:url(img/Tug-o-war.jpg);">
                     </div>
                 </div>
                 <div class="col-md-6 pl-lg-5 py-5">
                     <div class="row justify-content-start pb-3">
                         <div class="col-md-12 heading-section ftco-animate">
                             <!--<h2 class="mb-4">About IGDTUW</h2>-->
-                            <p><b>Tug-of-war, athletic contest between two teams at opposite ends of a rope, each team trying to drag the other across a centre line.💥💥<br>
-                                MODE : OFFLINE<br>
-                                DATES : September 20, 2023 <br>
-                            <p>
-                                <a href="" target="_blank" class="btn btn-black py-3 px-4">Registerations Closed</a>
-                            </p>
+                            <p><b>Tug-of-war, athletic contest between two teams at opposite ends of a rope, each team
+                                    trying to drag the other across a centre line.💥💥<br>
+                                    MODE : OFFLINE<br>
+                                    DATES : September 20, 2023 <br>
+                                    <p>
+                                        <a href="" target="_blank" class="btn btn-black py-3 px-4">Registerations
+                                            Closed</a>
+                                    </p>
                         </div>
                     </div>
 
@@ -569,8 +587,9 @@
         </div>
     </section>-->
 
-    
-    <section class="ftco-section testimony-section" style="background-image: url(img/Gallery/11.JPG);" data-stellar-background-ratio="0.2">
+
+    <section class="ftco-section testimony-section" style="background-image: url(img/Gallery/11.JPG);"
+        data-stellar-background-ratio="0.2">
         <div class="overlay"></div>
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
@@ -587,20 +606,23 @@
         <div class="container" style="display: flex; justify-content: center; align-items: center;">
             <div class="row d-flex">
                 <!--<div class="col-md-6 pl-lg-5 py-5">-->
-                    <div class="row justify-content-start pb-3" >
-                        <div class ="col-md-12 heading-section ftco-animate" style="justify-content: center; align-items: center;" >
-                            <br><br>
-                            <h2 class="mb-4" style="text-align: center; background-color: rgb(247, 211, 9);">Rules</h2>
-                            <p><b>1. An 8 players pick up each end of the rope.<br>
+                <div class="row justify-content-start pb-3">
+                    <div class="col-md-12 heading-section ftco-animate"
+                        style="justify-content: center; align-items: center;">
+                        <br><br>
+                        <h2 class="mb-4" style="text-align: center; background-color: rgb(247, 211, 9);">Rules</h2>
+                        <p><b>1. An 8 players pick up each end of the rope.<br>
                                 2. The players begin tugging the rope when the referee gives the signal.<br>
                                 3. Each player pulls backwards as hard as they can.<br>
-                                4. The teams continue pulling until the center of the rope (tape mark) crosses the middle mark.<br>
-                                5.The game ends when the referee declares one team has successfully pulled the past the center.</b></p>
-                        </div>
+                                4. The teams continue pulling until the center of the rope (tape mark) crosses the
+                                middle mark.<br>
+                                5.The game ends when the referee declares one team has successfully pulled the past the
+                                center.</b></p>
                     </div>
-
                 </div>
+
             </div>
+        </div>
         </div>
     </section>
 
@@ -616,19 +638,20 @@
             font-weight: bold;
             text-align: center;
         }
-        
+
         .SportsFamilyname {
             color: black;
             font-weight: bold;
             text-align: center;
         }
-        
+
         .SportsFamilyImg {
             display: block;
             margin: auto;
             width: 250px;
         }
-        .myTeamsImages .col-sm-4{
+
+        .myTeamsImages .col-sm-4 {
             max-width: unset;
         }
     </style>
@@ -636,19 +659,19 @@
         /* .game-schedule .sport-team {
             padding: 0px;
         } */
-        
+
         .game-schedule .sport-team img {
             height: 250px;
         }
     </style>
     <section class="ftco-section ftco-game-schedule ftco-no-pt">
-       <!-- <div class="container">
+        <!-- <div class="container">
             <div class="row mt-1">
                 <div class="col-md-12 heading-section ftco-animate mb-4 mt-4 text-center">
                     <h2 style="background-color: rgb(247, 211, 9);">Glimpse</h2>
                 </div>
             </div>-->
-            <!--<div class="row ftco-animate mb-1">
+        <!--<div class="row ftco-animate mb-1">
                 <div class="col-md-12 carousel-game-schedule owl-carousel">
                     <div class="item">
                         <div class="game-schedule">
@@ -769,77 +792,77 @@
 
 
 
-        <!--WINNERS LIST-->
+    <!--WINNERS LIST-->
+    <div class="container">
+        <div class="row mt-1">
+            <div class="col-md-12 heading-section ftco-animate mb-4 mt-4 text-center">
+                <h2 style="background-color: rgb(247, 211, 9);">Winners</h2>
+            </div>
+        </div>
+
         <div class="container">
-            <div class="row mt-1">
-                <div class="col-md-12 heading-section ftco-animate mb-4 mt-4 text-center">
-                    <h2 style="background-color: rgb(247, 211, 9);">Winners</h2>
-                </div>
-            </div>
-
-            <div class="container">
-                <div class="row "> 
-                    <div class="col-md-4 ">
-                        <div class="item">
-                            <div class="game-schedule">
-                                <div class="sport-team d-flex align-items-center" onclick="tugowar()">
-                                    <!--<div class="img logo" style="background-image: url(img/chessBattleIcon23.webp);"></div>-->
-                                    <div class="pl-4 desc">
-                                        <h4 class="team-name">1st Position</h4>
-                                        <span class="date">Team - itians</span>
-                                        <h4 class="team-name">Members:</h4>
-                                        <!--<img src="img/tug-o-war-1.jpeg" alt="" style="height: 100%; width: 70%;"><br>-->
-                                        <span class="date">Chhavi(It)</span><br>
-                                        <span class="date">Darakshan(It)</span><br>
-                                        <span class="date">Vishakha(It)</span><br>
-                                        <span class="date">Kashish(It)</span><br>
-                                        <span class="date">Poorva(It)</span><br>
-                                        <span class="date">Himanshi(It)</span><br>
-                                        <span class="date">Sonia(It)</span><br>
-                                        <span class="date">Urja(It)</span>
-                                    </div>
+            <div class="row " style="flex-direction: row; justify-content: center;">
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <div class="game-schedule">
+                            <div class="sport-team d-flex align-items-center" onclick="tugowar()">
+                                <!--<div class="img logo" style="background-image: url(img/chessBattleIcon23.webp);"></div>-->
+                                <div class="pl-4 desc">
+                                    <h4 class="team-name">1st Position</h4>
+                                    <span class="date">Team - itians</span>
+                                    <h4 class="team-name">Members:</h4>
+                                    <!--<img src="img/tug-o-war-1.jpeg" alt="" style="height: 100%; width: 70%;"><br>-->
+                                    <span class="date">Chhavi(It)</span><br>
+                                    <span class="date">Darakshan(It)</span><br>
+                                    <span class="date">Vishakha(It)</span><br>
+                                    <span class="date">Kashish(It)</span><br>
+                                    <span class="date">Poorva(It)</span><br>
+                                    <span class="date">Himanshi(It)</span><br>
+                                    <span class="date">Sonia(It)</span><br>
+                                    <span class="date">Urja(It)</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 ">
-                        <div class="item">
-                            <div class="game-schedule">
-                                <div class="sport-team d-flex align-items-center" onclick="tugowar()">
-                                    <!--<div class="img logo" style="background-image: url(img/chessBattleIcon23.webp);"></div>-->
-                                    <div class="pl-4 desc">
-                                        <h4 class="team-name">2nd Position</h4>
-                                        <span class="date">Team - Seedhe Maut</span>
-                                        <h4 class="team-name">Members:</h4>
-                                        <!--<img src="img/tug-o-war-1.jpeg" alt="" style="height: 100%; width: 70%;"><br>-->
-                                        <span class="date">Stuti Tiwari(Cse-ai)</span><br>
-                                        <span class="date">Mahi Gupta(Cse-ai)</span><br>
-                                        <span class="date">Dhani verma(Mae)</span><br>
-                                        <span class="date">Prachi Kumari(Cse-ai)</span><br>
-                                        <span class="date">Khyati Singh(Cse-ai)</span><br>
-                                        <span class="date">Nirjala(Mae)</span><br>
-                                        <span class="date">Supriya Singh(Ece)</span><br>
-                                        <span class="date">Jiya Yadav(Cse-ai)</span>
-                                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="item">
+                        <div class="game-schedule">
+                            <div class="sport-team d-flex align-items-center" onclick="tugowar()">
+                                <!--<div class="img logo" style="background-image: url(img/chessBattleIcon23.webp);"></div>-->
+                                <div class="pl-4 desc">
+                                    <h4 class="team-name">2nd Position</h4>
+                                    <span class="date">Team - Seedhe Maut</span>
+                                    <h4 class="team-name">Members:</h4>
+                                    <!--<img src="img/tug-o-war-1.jpeg" alt="" style="height: 100%; width: 70%;"><br>-->
+                                    <span class="date">Stuti Tiwari(Cse-ai)</span><br>
+                                    <span class="date">Mahi Gupta(Cse-ai)</span><br>
+                                    <span class="date">Dhani verma(Mae)</span><br>
+                                    <span class="date">Prachi Kumari(Cse-ai)</span><br>
+                                    <span class="date">Khyati Singh(Cse-ai)</span><br>
+                                    <span class="date">Nirjala(Mae)</span><br>
+                                    <span class="date">Supriya Singh(Ece)</span><br>
+                                    <span class="date">Jiya Yadav(Cse-ai)</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                   
                 </div>
-        
-            </div>
-
-
-            
-                        
 
             </div>
-            <div class="row mt-1">
-               <br><br> 
-            </div>
 
-            <!--<div class="row ftco-animate">
+        </div>
+
+
+
+
+
+    </div>
+    <div class="row mt-1">
+        <br><br>
+    </div>
+
+    <!--<div class="row ftco-animate">
                 <div class="col-md-12 carousel-game-schedule owl-carousel">
                     <div class="item">
                         <div class="game-schedule">
@@ -878,16 +901,16 @@
             </div>
         </div>
         <BR>-->
-<!-- Main Content End -->
+    <!-- Main Content End -->
 
 
-<!-- Footer Code Start -->
+    <!-- Footer Code Start -->
     <style>
         #footer {
             padding: 15px;
             padding-top: 25px;
         }
-        
+
         .text {
             padding: 0px;
             text-align: left;
@@ -901,13 +924,20 @@
                         <h2 class="ftco-heading-2">Synergy</h2>
                         <p class="text">The Sports Society of Indira Gandhi Delhi Technical University For Women</p>
                         <ul class="list-unstyled">
-                            <li><a href="mailto: synergy@igdtuw.ac.in"><span class="icon icon-envelope">&nbsp synergy@igdtuw.ac.in</span></a></li>
+                            <li><a href="mailto: synergy@igdtuw.ac.in"><span class="icon icon-envelope">&nbsp
+                                        synergy@igdtuw.ac.in</span></a></li>
                         </ul>
                         <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                            <li class="ftco-animate"><a href="https://www.linkedin.com/company/synergy-sports-society-of-igdtuw/"><span class="icon-linkedin"></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.facebook.com/igdtuwsportsclub"><span class="icon-facebook"></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.instagram.com/synergy_igdtuw/"><span class="icon-instagram"></span></a></li>
-                            <li class="ftco-animate"><a href="https://www.youtube.com/channel/UC1BZemcKB4j9mbwSmHNkoew"><span class="icon-youtube"></span></a></li>
+                            <li class="ftco-animate"><a
+                                    href="https://www.linkedin.com/company/synergy-sports-society-of-igdtuw/"><span
+                                        class="icon-linkedin"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.facebook.com/igdtuwsportsclub"><span
+                                        class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/synergy_igdtuw/"><span
+                                        class="icon-instagram"></span></a></li>
+                            <li class="ftco-animate"><a
+                                    href="https://www.youtube.com/channel/UC1BZemcKB4j9mbwSmHNkoew"><span
+                                        class="icon-youtube"></span></a></li>
 
                         </ul>
                         <br>
@@ -921,15 +951,18 @@
                         <div class="block-23 mb-3">
                             <ul>
                                 <li><a><span class="icon icon-map-marker"></span><span class="text"> Madrasa Road
-									Opposite St. James Church
-									Kashmere Gate
-									Delhi-110006</span></a></li>
-                                    <li><a><span class="icon icon-phone"></span><span class="text">Nandini Baliyan (President)</span></a>
+                                            Opposite St. James Church
+                                            Kashmere Gate
+                                            Delhi-110006</span></a></li>
+                                <li><a><span class="icon icon-phone"></span><span class="text">Nandini Baliyan
+                                            (President)</span></a>
 
-                                        <a><span class="icon icon-phone"></span><span class="text">Garima Gill (General Secretary)</span></a>
-    
-                                        <a><span class="icon icon-phone"></span><span class="text">Khushi Kakkar (Treasurer)</span></a>
-                                    </li>
+                                    <a><span class="icon icon-phone"></span><span class="text">Garima Gill (General
+                                            Secretary)</span></a>
+
+                                    <a><span class="icon icon-phone"></span><span class="text">Khushi Kakkar
+                                            (Treasurer)</span></a>
+                                </li>
 
                             </ul>
                         </div>
@@ -939,20 +972,26 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <p>
-                        Developed by <a href="https://www.linkedin.com/in/tanya-garg-b51221145/" target="_blank">Tanya Garg (MCA, IGDTUW)</a> Web-D Core of Synergy
+                        Developed by <a href="https://www.linkedin.com/in/tanya-garg-b51221145/" target="_blank">Tanya
+                            Garg (MCA, IGDTUW)</a> Web-D Core of Synergy
                         <br> Copyright &copy;
                         <script>
                             document.write(new Date().getFullYear());
-                        </script> All rights reserved.</p>
+                        </script> All rights reserved.
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
-<!-- Footer Code End -->
+    <!-- Footer Code End -->
 
 
     <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
 
 
     <script src="js/jquery.min.js"></script>
@@ -968,7 +1007,8 @@
     <script src="js/jquery.animateNumber.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/scrollax.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="js/google-map.js"></script>
     <script src="js/main.js"></script>
 
