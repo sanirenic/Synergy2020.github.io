@@ -16,7 +16,7 @@ function showDay2() {
 
 
 // Set the date we're counting down to
-var countDownDate = new Date("March 29, 2024 00:00:00").getTime();
+var countDownDate = new Date("April 12, 2024 00:00:00").getTime();
 
 // Update the countdown every second
 var x = setInterval(function() {
